@@ -1,1 +1,12 @@
-
+{
+  "name": "teleshort-api",
+  "version": "1.0.0",
+  "description": "Backend API for TeleShort",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0"
+  }
+}
