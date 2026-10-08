@@ -7,8 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <!-- Monetag Script Updated -->
-    <script src='//libtl.com/sdk.js' data-zone='11982123' data-sdk='show_11982123'></script>
+    <script src='//libtl.com/sdk.js' data-zone='11515208' data-sdk='show_11515208'></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     
     <style>
@@ -276,10 +275,11 @@
         // --- API CONFIGURATION ---
         const SUPABASE_URL = 'https://xypxrgqvfuqbiltdxrpj.supabase.co'; 
         const SUPABASE_ANON_KEY = 'sb_publishable__7b_NvbRQEz-wv7sGmkDKw_3XzG3kh_';
-        const VERCEL_API_URL = 'https://urlshortsaim-nl3l3wgkf-rowdys.vercel.app/api'; 
+        const VERCEL_API_URL = 'https://urlshortsaim-iota.vercel.app/api'; 
         
+        // UPDATED BOT LINKS HERE
         const BOT_USERNAME = 'jznurlshorts_bot'; 
-        const APP_SHORT_NAME = 'TeleShortLink'; 
+        const APP_SHORT_NAME = 'httpsurlshortsaimiotavercel'; 
 
         let dbClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
         let currentUserData = null;
@@ -595,7 +595,7 @@
         }
 
         function checkAdBlocker(btn, timerEl) {
-            if (typeof show_11982123 === 'undefined') {
+            if (typeof show_11515208 === 'undefined') {
                 document.getElementById('ad-blocker-warning').classList.remove('hidden');
                 document.getElementById('ad-step-title').innerText = "Action Required";
                 btn.classList.add('hidden'); timerEl.innerHTML = '<i class="fa-solid fa-ban text-red-500 text-xl"></i>';
@@ -609,7 +609,7 @@
         function executeAdClick() {
             const btn = document.getElementById('btn-watch-ad'); btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin mr-2"></i> Loading Ad...`;
             document.getElementById('ad-loader-ring').classList.remove('hidden'); document.getElementById('ad-timer-text').classList.add('hidden');
-            if (typeof show_11982123 === 'function') { show_11982123().then(() => { handleAdSuccess(); }).catch(() => { handleAdSuccess(); }); }
+            if (typeof show_11515208 === 'function') { show_11515208().then(() => { handleAdSuccess(); }).catch(() => { handleAdSuccess(); }); }
         }
 
         function handleAdSuccess() {
